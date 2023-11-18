@@ -1,0 +1,139 @@
+@import "color";
+@import "constants";
+@import "media_queries";
+
+%before-after-case{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    background-color: $blue;
+    transition:  .3s;
+    border-radius: $borderRadius;
+
+}
+
+.showcase{
+    width: 100vw;
+    height: 85vh;
+
+    h1{
+   
+   margin-left: 2rem;
+   text-align: center;
+   color: $orange;
+   margin-top: 20px;
+   color: $orange;
+   font-weight: bolder;
+   font-size: 50px;
+   text-shadow: 0 0 10px rgba($color: #4b0d0de1, $alpha:0.7);
+    }
+
+&_container{
+        
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 400px;
+           align-items: center;
+           justify-content: center;
+           margin: 0 auto;
+           height: 70%;
+           width: 100%;
+           
+           @include tablet{
+            grid-template-columns: 1fr;
+            height: 90%;}
+
+     &_left{
+           
+               width: 100%;
+               height: 100%;
+               color: $orange;
+               line-height: 1.2;
+               top: 0;
+               text-align: center;
+               @include tablet{
+                padding: 5rem 0;
+                }
+                @include tablet{
+                font-size: 2rem;
+                }
+                   h2 {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: $orange;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 200px;
+                    text-shadow: 0 0 10px rgba($color: #4b0d0de1, $alpha:0.7);
+                    
+    
+                    @include mobile{
+                        font-size: 2rem;
+                    }
+                   }
+            }
+         
+    &_right {
+                width: 100%;
+                height: 100%;
+               color: $orange;
+               line-height: 1.2;
+               top: 0;
+               text-align: center;
+              
+                
+
+                p {
+                 font-size: 30px;
+                 color: $orange;
+                 margin-top: 400px;
+                 margin-left: 100px;
+                 font-weight: bold;
+                 text-shadow: 0 0 10px rgba($color: #4b0d0de1, $alpha:0.7);
+
+                 @include mobile{
+                 font-size: 1.4rem;
+                 }
+                }
+                
+        &_signup {
+                 font-size: 1rem;
+                 background-color: $orange;
+                 padding: 15px 30px;
+                 border: none;
+                 border-radius: $borderRadius;
+                 margin-top: 2rem;
+                 cursor: pointer;
+                 position: relative;
+                 transition: .3s;
+
+                 a{
+                 color: $light;
+                 z-index: 2;
+                 position: relative;
+                 text-decoration: none;
+                 font-size: 19px;
+                 }
+                 &::after{
+                 @extend %before-after-case;
+                 left: 50%;
+                 }
+                 &::before{
+                 @extend %before-after-case;
+                 right: 50%;
+                 }
+                 &:hover::after{
+                 width: 50%;
+                
+                 }
+                 &:hover::before{
+                 width: 50%;
+                 
+                 }
+                }
+            }
+        }
+}

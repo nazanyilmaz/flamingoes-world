@@ -1,0 +1,21 @@
+ @import "navbar";
+ @import "showcase";
+ @import "footer";
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+ }
+ body{
+   background-image: url('./image/flamingo.png');
+   background-position: center;
+   background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ }
+ 
