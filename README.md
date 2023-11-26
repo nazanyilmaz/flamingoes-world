@@ -10,6 +10,5 @@
 
 <h2>Project Gif</h2>
 
-
-https://github.com/nazanyilmaz/flamingoes-world/assets/147782488/1446727c-8e79-4156-b89c-dcb84dccd5f8
+![ezgif com-optimize (7)](https://github.com/nazanyilmaz/flamingoes-world/assets/147782488/2ff7fa6e-5b8a-4039-977e-108b4bc9e728)
 
